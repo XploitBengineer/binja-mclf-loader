@@ -1,0 +1,21 @@
+{
+    "pluginmetadataversion": 2,
+    "name": "MCLF Loader",
+    "type": ["binaryview"],
+    "api": ["python3"],
+    "description": "Loader for MobiCore Loadable Format (MCLF) trustlet and driver binaries used in Samsung/Mediatek TrustZone implementations",
+    "longdescription": "This plugin adds support for loading MobiCore Loadable Format (MCLF) binaries commonly found in Samsung and Mediatek devices' TrustZone implementations.\n\nFeatures:\n- Automatic detection of MCLF files via magic bytes\n- Proper mapping of .text, .data, and .bss segments\n- Entry point detection with Thumb mode support\n- Automatic symbol creation for tlApiLibEntry\n\nBased on the IDA loader by Gassan Idriss.",
+    "license": {
+        "name": "GPLv2",
+        "text": "GNU General Public License v2.0"
+    },
+    "platforms": ["Darwin", "Linux", "Windows"],
+    "installinstructions": {
+        "Darwin": "Copy this folder to ~/Library/Application Support/Binary Ninja/plugins/",
+        "Linux": "Copy this folder to ~/.binaryninja/plugins/",
+        "Windows": "Copy this folder to %APPDATA%\\Binary Ninja\\plugins\\"
+    },
+    "version": "1.0.0",
+    "author": "Based on work by Gassan Idriss",
+    "minimumbinaryninjaversion": 3164
+}
