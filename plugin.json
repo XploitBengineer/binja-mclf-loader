@@ -9,13 +9,11 @@
         "name": "GPLv2",
         "text": "GNU General Public License v2.0"
     },
-    "platforms": ["Darwin", "Linux", "Windows"],
+    "platforms": ["Linux"],
     "installinstructions": {
-        "Darwin": "Copy this folder to ~/Library/Application Support/Binary Ninja/plugins/",
         "Linux": "Copy this folder to ~/.binaryninja/plugins/",
-        "Windows": "Copy this folder to %APPDATA%\\Binary Ninja\\plugins\\"
     },
     "version": "1.0.0",
-    "author": "Based on work by Gassan Idriss",
+    "author": "XploitBengineer - Based on work by Gassan Idriss",
     "minimumbinaryninjaversion": 3164
 }
